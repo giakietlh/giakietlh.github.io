@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/login-regist.css">
+    <title>Thiên Ân Farm</title>
+    <!-- FontAweSome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Web logo -->
+    <link rel="icon" href="assets/img/Picture4.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="sidebar">
+                <div class="logo_content">
+                    <div class="logo">
+                        <img src="./assets/img/Picture4.png" alt="">
+                        <div class="logo-name">Thiên Ân Farm</div>
+                    </div>
+                    <i class="fa-solid fa-bars" id="btn"></i>
+                </div>
+                <ul class="nav_list">
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass" id="search-js"></i>
+                        <input type="text" placeholder="Search...">
+                    </li>
+                    <li>
+                        <a href="#" id="harvest-js">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="link_name">Harvest</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" id="user-js">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="link_name">User</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#" id="edit-js">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span class="link_name">Edit</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#header" id="go-top">
+                            <i class="fa-solid fa-circle-arrow-up"></i>
+                            <span class="link_name">Go to top</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-folder"></i>
+                            <span class="link_name">File Manager</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="link_name">Setting</span>
+                        </a>
+
+                    </li>
+                </ul>
+                <div class="profile_content">
+                    <div class="profile">
+                        <div class="profile_details">
+                            <img src="/assets/img/deptrai.jpg" alt="">
+                            <div class="name_job">
+                                <div class="name">Thiên Ân</div>
+                                <div class="job">Admin</div>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-from-bracket" id="log-out"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p id="header">
+            </p>
+            <table id="tblInvoice" cellpadding="1.25" cellspacing="1.25">
+                <!-- <p>a</p> -->
+                <thead>
+                    <th>Uid</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Pass</th>
+                    <th>Avatar</th>
+                    <th>Job</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+
+                <tbody>
+                    <!-- <tr></tr> -->
+                </tbody>
+            </table>
+
+            <div class="main-thienan wrapper">
+                <h1>Edit User</h1>
+                <div class="main-agileinfo">
+                    <div class="agileits-top">
+                        <form method="post" name="myForm">
+                            <!-- Name -->
+                            <input class="text text-user" type="text" name="username" placeholder="Username" required="">
+                            <!-- Email -->
+                            <input class="text text-user email" type="email" name="email" placeholder="Email" required="">
+                            <!-- Pass -->
+                            <input class="text text-user" type="text" name="username" placeholder="Password" required="">
+                            <!-- Set avatar -->
+                            <input class="text text-user text-img" type="text" placeholder="Source Img" required="">
+                            <!-- Quyền lợi  -->
+                            <input class="text text-user text-img" type="text" placeholder="Job" required="">
+                            <!-- Submit -->
+                            <input type="button" value="SAVE" id="log-in">
+                        </form>
+                    </div>
+                </div>
+                <!-- copyright -->
+                <div class="colorlibcopy-agile">
+                    <p>© 2022 Thiên Ân Edit Form. All rights reserved | Design by <a
+                            href="https://www.facebook.com/profile.php?id=100048120233728" target="_blank">Thiên Ân</a>
+                    </p>
+                </div>
+                <!-- //copyright -->
+                <div class="buble">
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                    <div><span class="dot"></span></div>
+                </div>
+
+
+            </div>
+
+            
+            <div class="harvest">
+                <table id="tblHarvest" cellpadding="1.25" cellspacing="1.25">
+                    <!-- <p>Harvest Manager</p> -->
+                    <thead id="header-harvest">
+                        <th>Stt</th>
+                        <th>Harvest's Name</th>
+                        <th>Estimated Quantity (Kg)</th>
+                        <th>Current Quantity (Kg)</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>State</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+
+                    <tbody>
+                        <!-- <tr></tr> -->
+                    </tbody>
+                </table>
+
+                <div class="main-thienan-harvest wrapper">
+                    <h1>Edit Harvest</h1>
+                    <div class="main-agileinfo">
+                        <div class="agileits-top">
+                            <form method="post" name="myForm">
+                                <!-- Name -->
+                                <input class="text-harvest text" type="text" name="username" placeholder="Name" required="">
+                                <!-- Quantity -->
+                                <input class="text-harvest text email" type="text" name="email" placeholder="Quantity" required="">
+                                <!-- Start Day -->
+                                <input class="text-harvest text" type="date" name="username" required="">
+                                <!-- End Day -->
+                                <input class="text-harvest text text-img" type="date" required="">
+                                 <!-- Submit -->
+                                <input type="button" value="SAVE" class="harvest-btn">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- copyright -->
+                    <div class="colorlibcopy-agile">
+                        <p>© 2022 Thiên Ân Edit Form. All rights reserved | Design by <a
+                                href="https://www.facebook.com/profile.php?id=100048120233728" target="_blank">Thiên Ân</a>
+                        </p>
+                    </div>
+                    <!-- //copyright -->
+                    <div class="buble">
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                        <div><span class="dot"></span></div>
+                    </div>
+    
+    
+                </div>
+            </div>
+
+            <button class="back-btn">
+                <i class="fa-solid fa-circle-left" style="
+                font-size: 22px;
+            "></i>
+            </button>
+        </div>
+
+        <div class="noti">
+            <div class="noti-content">
+                <i class="fa-solid fa-check check"></i>
+                <div class="message">
+                    <span class="noti-content-text text-1">Success</span>
+                    <span class="noti-content-text text-2">Your change has been saved</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close"></i>
+
+            <div class="progress">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/base.js"></script>
+   <script src="assets/js/harvest.js"></script>
+</body>
+
+</html>

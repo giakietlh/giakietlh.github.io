@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+/* Table */
+.content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #ffffffd6;
+}
+
+
+#tblInvoice,#tblHarvest {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    /* display: none; */
+}
+
+td {
+    text-align: center;
+    border-top: 1px solid;
+    /* padding: 10px 0; */
+    border-right: 1px solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 8px;
+}
+
+th {
+    border-right: 1px solid white;
+    color: #ffc0cb;
+    font-weight: 800;
+    padding: 12px;
+}
+
+button {
+    opacity: 0.6;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 10px 20px;
+    white-space: nowrap;
+    color: #fff;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    font-size: 20px;
+}
+
+.edit-btn:hover {
+    background-color: #007bb6;
+    border: 1px solid #007bb6;
+    opacity: 1;
+}
+
+.delete-btn:hover {
+    background-color: var(--error-color);
+    border: 1px solid var(--error-color);
+    opacity: 1;
+}
+
+.delete-btn:hover i {
+    color: white;
+    opacity: 0.6;
+}
+
+tr {
+    height: 68px;
+}
+
+.icon-edit {
+    color: #ffc107;
+}
+
+.icon-delete {
+    color: var(--error-color);
+}
+
+
+iframe {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: scroll;
+}
+
+.back-btn {
+    position: fixed;
+    top: 46px;
+    right: 4%;
+    opacity: 0.6;
+    border-radius: 6px;
+    background-color: #e60023;
+    padding: 10px 20px;
+    white-space: nowrap;
+    color: #fff;
+    height: 44px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.back-btn:hover {
+    background-color: #e60023;
+    color: #fff;
+    border: 1px solid #e60023;
+    opacity: 1;
+}
+
+/* Hover JS */
+.hover-sidebar {
+    color: #11101d !important;
+    background: #fff;
+}
+
+.text-img {
+    margin: 2em 0;
+}
+
+/* Edit page */
+#log-in, .harvest-btn {
+    background: #e60023 !important;
+    border: 1px solid #e60023 !important;
+    opacity: 0.6;
+    color: #fff;
+
+}
+
+#log-in:hover, .harvest-btn:hover {
+    background: #e60023 !important;
+    ;
+    border: 1px solid #e60023 !important;
+    opacity: 1;
+    color: #fff;
+}
+
+input[type="date"] {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 100;
+    width: 100%;
+    display: block;
+    padding: 0.8em;
+    border: solid 1px #ffffff5e;
+    background: -webkit-linear-gradient(top, #fff0 96%, #fff 4%);
+    background: linear-gradient(to bottom, #fff0 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100% !important;
+}
+
+.harvest p, .content p {
+    padding: 16px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: bold;
+
+}

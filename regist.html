@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creative Colorlib SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script
+        type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Css -->
+    <link href="assets/css/login-regist.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- //web font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <h1>Creative SignUp Form</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form method="post" name="myForm">
+                    <input class="text" type="text" name="username" placeholder="Username" required="">
+                    <input class="text email" type="email" name="email" placeholder="Email" required="">
+                    <div class="seen">
+                        <div class="seen-items">
+                            <input class="text input" type="password" name="password" placeholder="Password"
+                                required="">
+                            <div class="seen-icon">
+                                <i class="fa-solid fa-eye eye-open hidden"></i>
+                                <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Xem mk -->
+                    <div class="seen">
+                        <div class="seen-items">
+                            <input class="text input" type="password" name="password" placeholder="Confirm Password"
+                                required="">
+                            <div class="seen-icon">
+                                <i class="fa-solid fa-eye eye-open hidden"></i>
+                                <i class="fa-solid fa-eye-low-vision eye-close"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Quyền lợi  -->
+                    <div class="authorities">
+                        <label for="authorities-items"> Choose positions in the farm: </label>
+                        <select name="authorities-items" class="authorities-items" id="authorities-items">
+                            <option value="1" selected>Owner</option>
+                            <option value="2">Staff</option>
+                            <option value="3">Viewer</option>
+                        </select>
+                    </div>
+
+                    <!-- Set avatar -->
+                    <div class="setavatar" style=" border: none;text-align: center;">
+                        <label for="avt" style="
+                                display: block;
+                                height: 194px;
+                                width: 59%;
+                                border-radius: 50%;
+                                border: 1px solid; 
+                                margin:0 auto;">
+                            <img src="" class="avatar">
+                        </label>
+                        <input type="file" class="avatar-choosen" value="Set Avatar" id="avt" hidden="">
+                    </div>
+
+                    <div class="wthree-text">
+                        <label class="anim">
+                            <input type="checkbox" class="checkbox" required="" name="checkbox">
+                            <span>I Agree To The Terms & Conditions</span>
+                        </label>
+                        <div class="clear"> </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <input type="button" value="SIGNUP" id="log-in">
+                </form>
+                <p>Do you have an Account? <a href="./login.html"> Login Now!</a></p>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="colorlibcopy-agile">
+            <p>© 2022 Kira Signup Form. All rights reserved | Design by <a
+                    href="https://www.facebook.com/profile.php?id=100048120233728" target="_blank">Thiên Ân</a></p>
+        </div>
+        <!-- //copyright -->
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- //main -->
+
+     <!-- Toast -->
+     <div class="noti">
+        <div class="noti-content">
+            <i class="fa-solid check"></i>
+            <div class="message">
+                <span class="noti-content-text text-1">Success</span>
+                <span class="noti-content-text text-2">Your change has been saved</span>
+            </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+
+        <div class="progress">
+        </div>
+    </div>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/regist.js"></script>
+    <script src="assets/js/base.js"></script>
+</body>
+
+</html>
